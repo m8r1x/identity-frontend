@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+    Identity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+  <head>
+    <title>Identity by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta id="theme-color" name="theme-color" content="#208075">
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="icon" href="/images/192x192.png" sizes="192x192" type="image/png">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="root"></div>
+    <!-- Footer -->
+    <div>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Identity</li>
+	  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+      if ('addEventListener' in window) {
+        window.addEventListener('load', function() { 
+	         document.body.className = document.body.className.replace(/\bis-loading\b/, ''); 
+        });
+
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function(reg) {
+                  console.log('serviceWorker registered with scope %s', reg.scope);
+                }).catch(function(err) {
+                  console.warn("serviceWorker registration failed: %s", err);
+                });
+          });
+        }
+      }
+      window.__PRELOADED_STATE__='preloadedState'
+    </script>
+
+  <script type="text/javascript" src="dist/vendor.bundle.js"></script><script type="text/javascript" src="dist/app.bundle.js"></script></body>
+</html>
