@@ -40,13 +40,13 @@ server.use('/sw.js', function(req, res) {
   res.sendFile(Path.join(__dirname, 'dist', 'sw.js'))
 })
 
-server.get('*', function(req, res, next) {
+/*server.get('*', function(req, res, next) {
   if (req.headers['x-forwarded-proto'] != 'https') {
     res.redirect('https://' +req.hostname +req.url)
   } else {
     next()
   }
-})
+})*/
 
 server.use('/', ssr)
 
