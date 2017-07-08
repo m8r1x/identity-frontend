@@ -35,7 +35,6 @@ server.use(morgan(
 server.use('/assets', Express.static(Path.resolve(__dirname, 'src', 'assets')))
 server.use('/dist', ESgzip(Path.join(__dirname, 'dist')))
 // server.use('/assets/css/main.css', ESgzip(Path.join(__dirname, 'assets', 'css')))
-server.use('/images', Express.static(Path.resolve(__dirname, 'src', 'images')))
 
 server.use('/sw.js', function(req, res) { 
   res.sendFile(Path.join(__dirname, 'dist', 'sw.js'))

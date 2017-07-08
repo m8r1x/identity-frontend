@@ -13,7 +13,7 @@ const User = ({ user }) => {
   return (
     <header>
       <span className="avatar">
-        <img src="/images/avatar.jpg" alt="" />
+        <img src="/assets/images/avatar.jpg" alt="" />
       </span>
       <h1>{name}</h1>
       <p>{career}</p>
