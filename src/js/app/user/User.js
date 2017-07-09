@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Image from './Image'
+
 const User = ({ user }) => {
   let name = 'x doe'
   let career = 'unknown'
@@ -12,9 +14,7 @@ const User = ({ user }) => {
 
   return (
     <header>
-      <span className="avatar">
-        <img src="/assets/images/avatar.jpg" alt="" />
-      </span>
+      <Image image="avatar.jpg" />
       <h1>{name}</h1>
       <p>{career}</p>
     </header>

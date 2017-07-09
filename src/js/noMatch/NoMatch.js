@@ -1,11 +1,11 @@
 import React from 'react'
 
+import Image from '../app/user/Image'
+
 const NoMatch = () => (
   <section id="main">
     <header>
-      <span className="avatar">
-        <img src="/assets/images/avatar.jpg" alt="" />
-      </span>
+      <Image image="avatar.jpg" />
     </header>
     
     <h1>404</h1>
