@@ -1,5 +1,5 @@
 {
-  "name": "identity",
+  "name": "identity-frontend",
   "version": "0.1.0",
   "description": "A simple card portfolio progressive web application",
   "main": "server.js",
