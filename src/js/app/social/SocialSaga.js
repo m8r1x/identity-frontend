@@ -13,7 +13,7 @@ $.defaults.headers.common['Authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI
 
 function* fetchSocial() {
   try {
-    const response = yield call($.get, 'http://id3ntityapi.herokuapp.com/users')
+    const response = yield call($.get, 'https://id3ntityapi.herokuapp.com/users')
     const social = response.data[0].socials
     yield put({ type: FETCH_SOCIAL_FULFILLED, payload: social })
   } catch (e) {
