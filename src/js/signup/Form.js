@@ -12,7 +12,7 @@ const Form = () => {
       <Input type="text" name="name" id="name" />
       <Input type="email" name="email" id="email" />
       { social }
-      <Button />
+      <Button text="Get Started" link="/" />
     </form>
   )
 }
