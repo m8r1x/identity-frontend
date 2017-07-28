@@ -11,7 +11,7 @@
     "build-task:scss-compile": "node-sass-chokidar --source-map true src/assets/sass/ -o dist/css",
     "dev": "webpack-dev-server --inline --hot --content-base src",
     "lint": "eslint .",
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "start:server": "json-server --watch db.json",
     "start:watch": "nodemon",
     "sass:build": "npm run build-task:scss-compile && npm run build-task:autoprefixer",
