@@ -1,6 +1,7 @@
 # identity
 A simple react + express, card potfolio, progressive web app.
 
+![alt Lighthouse Results](https://i.imgur.com/5883l5h.png?1)
 ## prerequisites
 - nodejs 6.10.2 or higher
 
